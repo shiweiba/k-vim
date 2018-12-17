@@ -546,15 +546,15 @@ map <leader><space> :FixWhitespace<cr>
 
 
 "主题 solarized
-Bundle 'altercation/vim-colors-solarized'
+"Bundle 'altercation/vim-colors-solarized'
 "let g:solarized_termcolors=256
-let g:solarized_termtrans=1
-let g:solarized_contrast="normal"
-let g:solarized_visibility="normal"
+"let g:solarized_termtrans=1
+"let g:solarized_contrast="normal"
+"let g:solarized_visibility="normal"
 
 "主题 molokai
 Bundle 'tomasr/molokai'
-"let g:molokai_original = 1
+let g:molokai_original = 1
 
 "################### 快速移动 ###################"
 
@@ -599,6 +599,9 @@ au FileType python let b:delimitMate_nesting_quotes = ['"']
 Bundle 'docunext/closetag.vim'
 let g:closetag_html_style=1 
 
+"缩进标识
+"Bundle 'Yggdroot/indentLine'
+"let g:indentLine_color_term = 239
 
 "for code alignment
 Bundle 'godlygeek/tabular'
@@ -709,12 +712,12 @@ endif
 
 
 " 修改主题和颜色展示
-colorscheme solarized
-set background=dark
-set t_Co=256
+"colorscheme solarized
+"set background=dark
+"set t_Co=256
 
-"colorscheme molokai
-"colorscheme desert
+colorscheme molokai
+colorscheme desert
 
 "设置标记一列的背景颜色和数字一行颜色一致
 hi! link SignColumn   LineNr
